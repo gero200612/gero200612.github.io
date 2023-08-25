@@ -1,0 +1,410 @@
+html{
+    scroll-behavior: smooth;
+
+}
+html, body{
+    min-width: 750px;
+}
+*{
+    text-decoration: none;
+}
+
+.nav-total{
+    top: 0;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: #ffffbf;
+    margin-bottom: 50px;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    
+    display: inline-block;
+    margin-right: 5px;
+    padding: 15px;
+    border-radius: 4px;
+}
+nav ul li:hover, nav ul li.active{
+    background: #d5d5b1;
+    transition: .3s;
+}
+
+nav ul li a{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.logo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    line-height: 90px;
+    margin-left: 25px;
+}
+#checkboton{
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    float: right;
+    margin-right: 40px;
+    display: none;
+}
+#check{
+    display: none;
+}
+li a i{
+    font-size: 30px;
+}
+li a i span{
+    
+    display: flex;
+    flex-direction: row;
+}
+li a i span p{
+    display: none;
+    font-size: 15px;
+    color:black;
+}
+#wsig{
+    margin-right: 25px;
+}
+@media(max-width: 1035px){
+    .logo{
+        font-size: 35px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    section div div div div #foto-info{
+        width: 300px;
+        height: 300px;
+    }
+    section div div div .titulo-info{
+        font-size: 35px;
+    }
+    section div div div #p-info{
+        font-size: 15px;
+    }
+    section div div div div #boton-info a{
+        font-size: 15px;
+    }
+    section div div div ul{
+        grid-template-columns: 1fr 1fr;
+        width: 200px;
+        font-size: 15px;
+    }
+}
+@media(max-width: 910px){
+    .nav-total{
+        background-color: #d5d5b1;
+    }
+    #checkboton{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #d5d5b1;
+        top: 63px;
+        left: 100%;
+        text-align: left;
+        transition: all .5s;
+    }
+    nav ul li{
+        border-radius: 0px;
+        display: block;
+        margin: 25px 0;
+        line-height: 30px;
+        border-bottom: 2px solid black;
+    }
+    li a.active, li a:hover{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left: 70%;
+    }
+    li a i span p{
+        display: block;
+    }
+    .redes:hover, .redes.active{
+        background: none;
+        color: red;
+    }
+}
+@media(max-width: 1200px) {
+    main section h1{
+        font-size: 150px;
+    }
+}
+@media(max-width: 850px) {
+    main section h1{
+        font-size: 100px;
+        margin-top: 150px;
+    }
+    section div .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    section div div div div button{
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    #checkboton{
+        margin: 10px 10px 0 0;
+    }
+    .lista-contactos{
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+    }
+    section div div div div #foto-info{
+        width: 400px;
+        height: 400px;
+    }
+    section div div div .titulo-info{
+        font-size: 45px;
+    }
+    section div div div #p-info{
+        font-size: 25px;
+    }
+    section div div div div #boton-info a{
+        font-size: 25px;
+    }
+}
+@media(max-width: 1110px){
+    section div div div .titulo-info{
+        font-size: 40px;
+    }
+    section div div div #p-info{
+        font-size: 20px;
+    }
+    section div div div div #boton-info a{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+body{
+    background-color:  #ffffbf;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    text-shadow: 5px 5px 5px grey;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200px;
+}
+
+.contenedor-grande{
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    background-color: #6c6c6c;
+    padding: 30px 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+}
+.titulo-info{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    color: #ffffbf;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+}
+#p-info{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 10px;
+    margin-bottom: 15px;
+    color: #ffffbf;
+    text-shadow: 3px 3px 3px black;
+}
+#boton-info a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffbf;
+    font-size: 25px;
+    font-weight: bold;
+}
+#boton-info{
+    background-color: #3d3d3d;
+    box-shadow: 2px 2px 2px black;
+    margin-top: 50px;
+}
+.div-boton{
+    
+    display: flex;
+    justify-content: center;  
+}
+
+#foto-info{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 10px 50px 10px 50px; 
+    box-shadow: 4px 4px 4px black;
+    border: 1px solid black;
+}
+.contenedor-img{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.infogeneral{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form-completo{
+    width: 300px;
+    background: #6c6c6c;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+ 
+}
+form p{
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+form p input{
+    background: #6c6c6c;
+    border: none;
+    border-bottom: 2px solid #ffffbf;
+    color: #ffffbf;
+    width: 100%;
+    font-size: 20px;
+}
+form p label{
+    color: #ffffbf;
+}
+.infonos li{
+    list-style: none;
+}
+.infonos p{
+    margin-left: 40px;
+    font-weight: bold;
+}
+.botonenviar p a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffbf;
+    font-weight: bold;
+    font-size: large;
+    width: 100px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: bold;  
+    background: #3d3d3d;
+    text-align: center;
+    box-shadow: 2px 2px 2px black;
+}
+#titulo-contactar{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+li span{
+    color:#ffffbf   ;
+}
+textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ffffbf;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+}
+.quiensomos{
+    place-items: none;
+    text-align: center;
+    width: 80%;
+}
+#tituloquienes{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+
+}
+.infogeneral{
+    place-items: center;
+}
+.titulo-productos{
+
+    color: black;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+ 
+}
+
+
+
+.footer{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.lista-contactos{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    justify-content: center
+}
+#div-contactos{
+    justify-content: center;
+}
+.redes{
+    font-weight: bold;
+    font-size: 25px;
+}
+li img{
+    width: 120px;
+}
+nav a img{
+    width: 200px;
+
+}
+#menu1{
+    margin-top: 15px;
+}
+#menu2{
+    margin-top: 7px;
+}
+#p-quienessomos{
+    font-size: 25px;
+}
+#p-ofrecemos{
+ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    width: 80%;
+    text-align: center;
+}
+.div-ofrecemos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

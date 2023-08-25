@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://kit.fontawesome.com/9be33e87c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="nav-total">
+        <nav>
+            <span class="logo" id="menu2">KFRENTAL</span>
+            <input type="checkbox" id="check">
+                <label for="check" id="checkboton">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            <ul>
+                <li><a href="kfrental.html">Inicio</a></li>
+                <li><a href="#p-ofrecemos">Nosotros</a></li>
+                <li><a href="mas informacion.html">Servicios</a></li>
+                <li><a href="#p-ofrecemos">Contactate</a></li>
+                <li class="redes"><a href="https://walink.co/8b53a9"><i class="fa-brands fa-whatsapp"><span><p>Whatsapp</p></span></i></li>
+                <li class="redes" id="wsig"><a href="https://www.instagram.com/kfrental/"><i class="fa-brands fa-instagram"><span><p>Instagram</p></span></i></a></li> 
+            </ul>
+        </nav>
+    </section>
+<main>
+    <section class="s-principal">
+        <h1>KFRENTAL</h1>
+    </section>
+    <section class="section-info"> 
+        <div class="contenedor-grande">
+            <div class="contenedor">
+                <div class="contenedor-info">
+                    <h3 class="titulo-info">Nuestros Productos</h3>
+                    <p id="p-info">Nuestros productos puede ser utilizados para un sinfin de ocaciones y ubicaciones.</p>
+                    <div class="div-boton">
+                        <button id="boton-info"><a href="mas informacion.html">Mas informacion</a></button>
+                    </div>
+                </div>
+                <div class="contenedor-img">
+                    <div class="foto-div">
+                        <img id="foto-info" src="carac nueva.jpg" alt="prod 1">
+                    </div> 
+                </div>   
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="contenedor-productos">
+            <div class="div-ofrecemos">
+                <h2 class="titulo-productos">¿Que ofrecemos?</h2>
+                <p id="p-ofrecemos">Nuestra empresa ofrece un servicio integral que combina el alquiler de lámparas con asesoramiento
+                de diseño. Con una amplia gama de lámparas de alta calidad para interiores y exteriores, te ayudaremos a elegir 
+                las opciones ideales para tu estilo y necesidades. Ya sea para eventos especiales o la renovación de espacios, 
+                nuestra combinación única de alquiler y diseño transformará cualquier entorno en algo excepcional.</p>
+            </div>
+        </div>
+    </section>
+    <section id="infogeneral" class="infogeneral">
+        <div class="quiensomos">
+            <h4 id="tituloquienes">¿quiénes somos?</h4>
+            <p id="p-quienessomos">KFRENTAl es una empresa ubicada en zona norte la cual busca ofrecer sus servicios de asesoriamiento
+                 de ambientes y alquiler de lamparas para eventos, con estos productos se busca crear un ambiente mas creativos e 
+                 iluminoso.</p>
+        </div>
+        
+        <div id="sobrenosotros">
+            <h3 id="titulo-contactar">¿Necesitas ayuda?</h3>
+            <div>
+                <div class="form-completo">
+                    <div class="contactar">
+                        <form action="enviar.php" method="post">
+                            <p>
+                                <label>Nombre</label>
+                                <input type="text" name="Nombre">
+                            </p>
+                            <p>
+                                <label>Apellido</label>
+                                <input type="text" name="Apellido">
+                            </p>
+                            <p>
+                                <label>Email</label>
+                                <input type="text" name="Email">
+                            </p>
+                            <p>
+                                <label>Mensaje</label>
+                                <textarea name="mensaje"></textarea>
+                            </p>
+                            <div class="botonenviar"><P><a href="">Enviar</a></P></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="footer">
+            <div>
+                <h4 class="redes">Redes sociales:</h4>
+                <div>
+                    <ul class="lista-contactos">
+                        <li id="imp"><i class="fa-solid fa-phone"></i><span>_</span>Telefono de Contacto:</li>
+                        <li id="imp"><i class="fa-solid fa-envelope"></i><span>_</span>Mail:</li>
+                        <li id="imp"><i class="fa-brands fa-square-instagram"></i><span>_</span>Instagram:</li>
+                        <li id="imp"><i class="fa-brands fa-whatsapp"></i><span>_</span>Whatsapp:</li>
+                        <li >+54 (911) 7393 0300</li>
+                        <li>infokfrental@gmail.com</li>
+                        <li>@KFRENTAL</li>
+                        <li id="whatsapp"><a href="https://walink.co/8b53a9"><img src="WhatsAppButtonGreenSmall.png" alt="whatsapp"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>© Copyright 2023 by KFRENTAL. All Rights Reserved.</p>
+        </div>
+    </section>
+</main>
+</body>
+</html>
